@@ -198,15 +198,22 @@ section {
     padding-bottom: .5rem;
 }
 
-.home .share {
+.Contato{
+    width: 70%;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+.Contato .share {
     position: relative;
     top: 10rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     padding: 1rem;
+    text-align: center;
 }
 
-.home .share a {
+.Contato .share a {
     height: 5rem;
     width: 5rem;
     line-height: 5rem;
@@ -217,7 +224,7 @@ section {
     border-radius: .5rem;
 }
 
-.home .share a:hover {
+.Contato .share a:hover {
     box-shadow: var(--box-shadow-inset);
     color: var(--green);
 }
@@ -333,6 +340,7 @@ section {
     width: 50%;
 }
 
+
 .servicos .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
@@ -433,21 +441,20 @@ section {
     transition-delay: .3s;
 }
 
+.box .content a{
+    color: var(--green);
+}
+
 .portfolio .box-container .box:hover .content h3 {
     transform: translateY(0rem);
     opacity: 1;
-}
-
-.Contato{
-    min-height: 60vh;
-    padding: 2rem;
 }
 
 .credits {
     font-size: 2rem;
     text-align: center;
     padding: 2.5rem 1rem;
-    margin-top: 1rem;
+    margin-top: -7rem;
     border-top: var(--border);
     color: var(--black);
 }
