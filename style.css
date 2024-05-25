@@ -98,7 +98,7 @@ section {
     margin: 1rem 0;
     border: 1rem solid transparent;
     border-radius: 50%;
-    height: 28rem;
+    height: 25rem;
     width: 25rem;
     box-shadow: var(--box-shadow);
 }
@@ -464,6 +464,13 @@ section {
 }
 
 /* media queries  */
+
+@media (max-width:1366px) {
+    .header{
+        overflow-y: scroll;
+    }
+}
+
 @media (max-width:991px) {
     html {
         font-size: 55%;
