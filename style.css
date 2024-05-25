@@ -47,8 +47,7 @@ body.active {
 }
 
 section {
-    min-height: 100vh;
-    padding: 2rem;
+    min-height: 90vh;
 }
 
 .btn {
@@ -451,7 +450,6 @@ section {
 
 .imgvetor{
     position: relative;
-    margin-top: 50px;
     width: 90%;
     height: auto;
 }
@@ -459,13 +457,13 @@ section {
 .vetor{
     position: relative;
     width: max(300px, 20vw);
+    margin-top: 15rem;
 }
 
 .credits {
     font-size: 2rem;
     text-align: center;
     padding: 2.5rem 1rem;
-    margin-top: -7rem;
     border-top: var(--border);
     color: var(--black);
 }
@@ -475,12 +473,6 @@ section {
 }
 
 /* media queries  */
-
-@media (max-width:1900px) {
-    .imgvetor{
-        margin-top: 140px;
-    }
-}
 
 @media (max-width:1366px) {
     .header{
@@ -525,7 +517,4 @@ section {
         border-right: 0;
     }
 
-    .imgvetor{
-        margin-top: 105px;
-    }
 }
