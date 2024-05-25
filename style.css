@@ -199,7 +199,7 @@ section {
 }
 
 .Contato{
-    width: 70%;
+    width: 90%;
     margin: auto;
     margin-top: 10rem;
 }
@@ -208,7 +208,6 @@ section {
     position: relative;
     top: 10rem;
     border-radius: .5rem;
-    box-shadow: var(--box-shadow);
     padding: 1rem;
     text-align: center;
 }
@@ -450,6 +449,18 @@ section {
     opacity: 1;
 }
 
+.imgvetor{
+    position: relative;
+    margin-top: 50px;
+    width: 90%;
+    height: auto;
+}
+
+.vetor{
+    position: relative;
+    width: max(300px, 20vw);
+}
+
 .credits {
     font-size: 2rem;
     text-align: center;
@@ -464,6 +475,12 @@ section {
 }
 
 /* media queries  */
+
+@media (max-width:1900px) {
+    .imgvetor{
+        margin-top: 140px;
+    }
+}
 
 @media (max-width:1366px) {
     .header{
@@ -492,6 +509,10 @@ section {
     #menu-btn {
         display: initial;
     }
+
+    .imgvetor{
+        margin-top: 80px;
+    }
 }
 
 @media (max-width:450px) {
@@ -502,5 +523,9 @@ section {
     .header {
         width: 100%;
         border-right: 0;
+    }
+
+    .imgvetor{
+        margin-top: 105px;
     }
 }
