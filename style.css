@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
-    --green: #0699fb;
+    --blue: #0699fb;
     --black: #444;
     --light-color: #777;
     --bg-color: #e6e6e6;
@@ -35,6 +35,25 @@ body {
     padding-left: 30rem;
 }
 
+*::-webkit-scrollbar {
+    width: 10px;
+    /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+    background: #e6e6e6;
+    /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    /* color of the scroll thumb */
+    border-radius: 15px;
+    /* roundness of the scroll thumb */
+    border: 2px solid #e6e6e6;
+    /* creates padding around scroll thumb */
+}
+
 body.active {
     --black: #fff;
     --light-color: #ddd;
@@ -48,6 +67,9 @@ body.active {
 
 section {
     min-height: 90vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
 }
 
 .btn {
@@ -64,7 +86,7 @@ section {
 
 .btn:hover {
     box-shadow: var(--box-shadow-inset);
-    color: var(--green);
+    color: var(--blue);
 }
 
 .cabecalho {
@@ -76,7 +98,7 @@ section {
 }
 
 .cabecalho span {
-    color: var(--green);
+    color: var(--blue);
     text-transform: uppercase;
 }
 
@@ -108,7 +130,7 @@ section {
 }
 
 .header .foto p {
-    color: var(--green);
+    color: var(--blue);
     font-size: 1.5rem;
 }
 
@@ -128,7 +150,7 @@ section {
 
 .header .navbar a:hover {
     box-shadow: var(--box-shadow-inset);
-    color: var(--green);
+    color: var(--blue);
 }
 
 #menu-btn {
@@ -150,7 +172,7 @@ section {
 }
 
 #menu-btn:hover {
-    color: var(--green);
+    color: var(--blue);
     box-shadow: var(--box-shadow-inset);
 }
 
@@ -172,7 +194,7 @@ section {
 }
 
 #theme-toggler:hover {
-    color: var(--green);
+    color: var(--blue);
     box-shadow: var(--box-shadow-inset);
 }
 
@@ -182,6 +204,7 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .home .content h3 {
@@ -193,11 +216,11 @@ section {
 
 .home .content p {
     font-size: 2rem;
-    color: var(--green);
+    color: var(--blue);
     padding-bottom: .5rem;
 }
 
-.Contato{
+.Contato {
     width: 90%;
     margin: auto;
     margin-top: 10rem;
@@ -224,7 +247,7 @@ section {
 
 .Contato .share a:hover {
     box-shadow: var(--box-shadow-inset);
-    color: var(--green);
+    color: var(--blue);
 }
 
 .SobreMim .row {
@@ -272,7 +295,7 @@ section {
 }
 
 .SobreMim .row .content h3 span {
-    color: var(--green);
+    color: var(--blue);
 }
 
 .SobreMim .row .content p {
@@ -310,7 +333,7 @@ section {
 .SobreMim .row .progress .bar span {
     display: block;
     height: 100%;
-    background: var(--green);
+    background: var(--blue);
     border-radius: 5rem;
 }
 
@@ -379,7 +402,7 @@ section {
     left: 0;
     height: 100%;
     width: 100%;
-    background: var(--green);
+    background: var(--blue);
     z-index: -1;
     clip-path: circle(9rem at 5% 0%);
     transition: .3s linear;
@@ -439,8 +462,8 @@ section {
     transition-delay: .3s;
 }
 
-.box .content a{
-    color: var(--green);
+.box .content a {
+    color: var(--blue);
 }
 
 .portfolio .box-container .box:hover .content h3 {
@@ -448,16 +471,16 @@ section {
     opacity: 1;
 }
 
-.imgvetor{
+.imgvetor {
     position: relative;
     width: 90%;
     height: auto;
+    margin-top: 11rem;
 }
 
-.vetor{
+.vetor {
     position: relative;
-    width: max(300px, 20vw);
-    margin-top: 15rem;
+    width: max(250px, 25vw);
 }
 
 .credits {
@@ -469,13 +492,13 @@ section {
 }
 
 .credits span {
-    color: var(--green);
+    color: var(--blue);
 }
 
 /* media queries  */
 
 @media (max-width:1366px) {
-    .header{
+    .header {
         overflow-y: scroll;
     }
 }
@@ -502,7 +525,7 @@ section {
         display: initial;
     }
 
-    .imgvetor{
+    .imgvetor {
         margin-top: 80px;
     }
 }
